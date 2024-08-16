@@ -6,6 +6,6 @@ url = 'https://www.rialcom.ru/internet_tariffs/'
 """
 header - шапка excel файла
 excel_file_name - имя excel файла
-width_list - параметры шапки excel файла
+width_list - параметры ширины шапки excel файла
 url - адрес сайта
 """

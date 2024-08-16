@@ -1,4 +1,4 @@
-import re
+import regex as re
 
 def get_num_from_str(str):
     """
