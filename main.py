@@ -4,11 +4,19 @@ from excelmaker.excelmaker import ExcelFileMakerClass
 from formatters.formatters import InternetApartmentFormatterClass, InternetPrivatHouseFormatterClass, InternetTVApartmentFormatterClass, InternetTVPrivatHouseFormatterClass
 
 def start_parsing():
+    """
+    Получение данных с сайта\n
+    Возращает список таблиц
+    """
     parser = ParserClass()
     parser.parse_tables_data()
     return parser.get_tables()
 
 def create_excel_file(parsing_data):
+    """
+    Создание excel файла из данных полученых парсером\n
+    parsing_data - список данных полученых парсером
+    """
     internet_apartment_data = parsing_data[0]
     internet_TV_apartment_data = parsing_data[1]
     internet_privat_house_data = parsing_data[2]

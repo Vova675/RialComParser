@@ -1,6 +1,10 @@
 class BaseClass:
 
     def __init__(self):
+        """
+        Базовый класс\n
+        __data - поле для хранения данных
+        """
         self.__data = []
 
     def get_data(self):

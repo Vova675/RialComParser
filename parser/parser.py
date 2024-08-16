@@ -5,6 +5,10 @@ from config import url
 class ParserClass:
 
     def __init__(self):
+        """
+        Инициализатор\n
+        Использует url из файла config.py для подключения к сайту
+        """
         self.__url = url
         self.__Tables_data = []
         self.__page = requests.get(self.__url)
@@ -13,6 +17,9 @@ class ParserClass:
         self.__soup = BeautifulSoup(self.__page.text, "html.parser")
 
     def __find_tables(self):
+        """
+        Выбирает все таблицы из HTML разметки
+        """
         self.__Tables_list = self.__soup.find_all(
         "table", 
         class_=[
@@ -21,6 +28,9 @@ class ParserClass:
         return 0
     
     def parse_tables_data(self):
+        """
+        Переводит все таблицы из HTML разметки в список
+        """
         self.__find_tables()
         for table in self.__Tables_list:
             tr_list = table.find_all("tr")

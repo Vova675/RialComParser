@@ -4,9 +4,18 @@ from baseFunc import get_num_from_str
 class InternetApartmentFormatterClass(BaseClass):
 
     def __init__(self):
+        """
+        Наследуемый класс\n
+        __data - поле для хранения отформатированных данных\n
+        Форматирует входные данные к нужному виду
+        """
         super().__init__()
 
     def set_data(self, data):
+        """
+        Форматирует входные данные
+        data - список данных (таблица)
+        """
         for i in range(1, len(data)):
             col = []
             col.append(data[i][0])
@@ -19,9 +28,18 @@ class InternetApartmentFormatterClass(BaseClass):
 class InternetPrivatHouseFormatterClass(BaseClass):
 
     def __init__(self):
+        """
+        Наследуемый класс\n
+        __data - поле для хранения отформатированных данных\n
+        Форматирует входные данные к нужному виду
+        """
         super().__init__()
 
     def set_data(self, data):
+        """
+        Форматирует входные данные
+        data - список(таблица)
+        """
         for i in range(1, len(data)):
             col = []
             col = []
@@ -35,9 +53,18 @@ class InternetPrivatHouseFormatterClass(BaseClass):
 class InternetTVApartmentFormatterClass(BaseClass):
 
     def __init__(self):
+        """
+        Наследуемый класс\n
+        __data - поле для хранения отформатированных данных\n
+        Форматирует входные данные к нужному виду
+        """
         super().__init__()
 
     def set_data(self, data, name_and_channel_list):
+        """
+        Форматирует входные данные
+        data - список(таблица)
+        """
         header_and_speed_list = []
         for elem in data[0]:
             if elem != ' ':
@@ -57,9 +84,18 @@ class InternetTVApartmentFormatterClass(BaseClass):
 class InternetTVPrivatHouseFormatterClass(BaseClass):
 
     def __init__(self):
+        """
+        Наследуемый класс\n
+        __data - поле для хранения отформатированных данных\n
+        Форматирует входные данные к нужному виду
+        """
         super().__init__()
 
     def set_data(self, data, name_and_channel_list):
+        """
+        Форматирует входные данные
+        data - список(таблица)
+        """
         header_and_speed_list = []
         for elem in data[0]:
             if elem != ' ':
