@@ -16,10 +16,10 @@
 4. Конфигурационные параметры расположены в файле __config.py__
    
 ## Библиотеки
-1. beautifulsoup4
-2. openpyxl
-3. requests
-4. regex
+1. beautifulsoup4 4.12.3
+2. openpyxl 3.1.5
+3. requests 2.32.3
+4. regex 2024.7.24
    
 ## Классы
 1. Файл __parser\parser.py__ содержит класс __ParserClass__, который используется для считывания данных их HTML разметки
