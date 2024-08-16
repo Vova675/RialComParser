@@ -6,7 +6,13 @@
 ## Запуск
 1. Проект расположен на [github](https://github.com/Vova675/RialComParser).
 2. Использовалось виртуальное окружение __venv__
+   ```bash
+   python -m venv venv
+   ```
 3. Зависимости расположены в файле __requirements.txt__
+   ```bash
+   pip install -r requirements.txt
+   ```
 4. Конфигурационные параметры расположены в файле __config.py__
    
 ## Библиотеки
